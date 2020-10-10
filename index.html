@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Asul&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <h1>Piedra papel tijera mortal</h1>
+
+    <div id="jugadapersona">
+            <button id="piedra" class="btn" onclick="jugadaHumano(0);">Piedra</button>
+            <button id="papel" class="btn" onclick="jugadaHumano(1);">Papel</button>
+            <button id="tijera" class="btn" onclick="jugadaHumano(2);">Tijera</button>
+    </div>
+    <p id="resultado">Resultado</p>
+    
+    <div id="vista_resultado">
+        <div id="jugador" class="vistajugada">
+        </div>
+        <div id="maquina" class="vistajugada">
+        </div>
+    
+        <div id="vistaresultado" class="vistajugada">
+        </div>
+    </div>
+
+    <div id="imagenmonja">
+            
+            <p id="perdiste">Perdiste</p>
+            
+            <button id="botonquitar" >ESCAPA!!! X</button>
+            
+    </div>
+    <audio id="audio"  controls>
+        <source  type="audio/mp3" src="sonido/grito.mp3" id="grito">
+        </audio>
+    <script src="js/script.js"></script>
+</body>
+</html>
